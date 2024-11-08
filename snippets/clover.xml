@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="clover"
+           fetch="https://github.com/The-Clover-Project"
+           sync-c="true"
+           sync-j="4"
+           revision="16" />
+
+  <remote  name="clover-gitlab"
+           fetch="https://gitlab.com/thecloverproject"
+           sync-c="true"
+           sync-j="4"
+           revision="16" />
+
+  <!-- art -->
+  <project path="art" name="art" groups="pdk" remote="clover" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="clover" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="clover" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="clover" />
+
+  <!-- build -->
+  <project path="build/make" name="build_make" groups="pdk,sysui-studio" remote="clover" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="clover" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="clover" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- external -->
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="clover" />
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="clover" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="clover" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="clover" />
+
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="clover" />
+
+  <!-- packages -->
+  <project path="packages/apps/BtHelper" name="packages_apps_BtHelper" remote="clover" />
+  <project path="packages/apps/CloverWalls" name="packages_apps_CloverWalls" remote="clover" />
+  <project path="packages/apps/ColumbusService" name="packages_apps_ColumbusService" remote="clover" />
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="clover-gitlab" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="clover" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="clover" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="clover" />
+  <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="clover" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clover" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="clover" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+
+  <!-- sepolicy -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="clover" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" groups="pdk" remote="clover" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="clover" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="clover" />
+
+  <!-- vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="clover" revision="main" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="clover" />
+  <project path="vendor/clover" name="vendor_clover" remote="clover" />
+  <project path="vendor/gms" name="vendor_gms" remote="clover-gitlab" clone-depth="1" />
+
+</manifest>
