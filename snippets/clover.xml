@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="clover"
+           fetch="https://github.com/The-Clover-Project"
+           sync-c="true"
+           sync-j="4"
+           revision="15" />
+
+  <remote  name="clover-gitlab"
+           fetch="https://gitlab.com/thecloverproject"
+           sync-c="true"
+           sync-j="4"
+           revision="15" />
+
+  <!-- art -->
+  <project path="art" name="art" groups="pdk" remote="clover" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="clover" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="clover" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="clover" />
+
+  <!-- build -->
+  <project path="build/make" name="build_make" groups="pdk,sysui-studio" remote="clover" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="clover" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- external -->
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="clover" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="clover" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="clover" />
+
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="clover" />
+
+  <!-- packages -->
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="clover-gitlab" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="clover" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+
+  <!-- sepolicy -->
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" remote="clover" />
+  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="clover" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" groups="pdk" remote="clover" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="clover" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="clover" />
+
+  <!-- vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="clover" />
+  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="clover" />
+  <project path="vendor/clover" name="vendor_clover" remote="clover" />
+  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="clover" />
+  <project path="vendor/gms" name="vendor_gms" remote="clover-gitlab" clone-depth="1" />
+
+</manifest>
