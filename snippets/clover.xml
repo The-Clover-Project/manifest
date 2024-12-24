@@ -5,13 +5,13 @@
            fetch="https://github.com/The-Clover-Project"
            sync-c="true"
            sync-j="4"
-           revision="15" />
+           revision="15-qpr1" />
 
   <remote  name="clover-gitlab"
            fetch="https://gitlab.com/thecloverproject"
            sync-c="true"
            sync-j="4"
-           revision="15" />
+           revision="15-qpr1" />
 
   <!-- art -->
   <project path="art" name="art" groups="pdk" remote="clover" />
@@ -32,6 +32,7 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/release" name="build_release" groups="pdk,tradefed" remote="clover" />
   <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="clover" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -43,14 +44,20 @@
   <!-- frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="clover" />
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="clover" />
+
+  <!-- hardware -->
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="clover" />
 
   <!-- manifest -->
   <project path="manifest" name="manifest" remote="clover" />
 
   <!-- packages -->
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="clover-gitlab" />
-  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs" remote="clover" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="clover" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="clover" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="clover" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="clover" />
 
@@ -67,7 +74,6 @@
   <project path="vendor/certification" name="vendor_certification" remote="clover" />
   <project path="vendor/custom-preference" name="vendor_custom-preference" remote="clover" />
   <project path="vendor/clover" name="vendor_clover" remote="clover" />
-  <project path="vendor/google/overlays/ThemeIcons" name="vendor_google_overlays_ThemeIcons" remote="clover" />
   <project path="vendor/gms" name="vendor_gms" remote="clover-gitlab" clone-depth="1" />
 
 </manifest>
