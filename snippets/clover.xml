@@ -54,6 +54,7 @@
   <project path="manifest" name="manifest" remote="clover" />
 
   <!-- packages -->
+  <project path="packages/apps/CloverWalls" name="packages_apps_CloverWalls" remote="clover" />
   <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="clover-gitlab" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="clover" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="clover" />
