@@ -133,7 +133,6 @@
   <project path="hardware/qcom-caf/sm8550/dataipa" name="LineageOS/android_vendor_qcom_opensource_dataipa" groups="qcom,kailua-vendor" remote="LineageOS" revision="lineage-22.1-caf-sm8550" />
   <project path="hardware/qcom-caf/sm8550/display" name="LineageOS/android_hardware_qcom_display" groups="qcom" remote="LineageOS" revision="lineage-22.1-caf-sm8550" />
   <project path="hardware/qcom-caf/thermal" name="LineageOS/android_hardware_qcom_thermal" groups="qcom,lanai-vendor" remote="LineageOS" />
-  <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,legacy-qcom" remote="LineageOS" />
   <project path="hardware/qcom-caf/wlan" name="LineageOS/android_hardware_qcom_wlan" groups="qcom,lanai-vendor" remote="LineageOS" revision="lineage-22.1-caf" />
   <project path="hardware/ril" name="LineageOS/android_hardware_ril" groups="pdk" remote="LineageOS" />
   <project path="hardware/samsung/nfc" name="LineageOS/android_hardware_samsung_nfc" groups="pdk" remote="LineageOS" />
