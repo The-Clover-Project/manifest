@@ -1,4 +1,4 @@
-![banner](https://github.com/The-Clover-Project/.github/raw/main/banner1.png)
+![banner](https://github.com/The-Clover-Project/.github/raw/main/banner8.png)
 # The Clover Project | Android Open Source Software
 An Android Operating System Based On AOSP.
 
