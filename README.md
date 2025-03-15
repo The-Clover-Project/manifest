@@ -8,7 +8,7 @@ An Android Operating System Based On AOSP.
 
 ### Sync our source ###
 ```bash
-repo init -u https://github.com/The-Clover-Project/manifest.git -b 15-qpr1 --git-lfs
+repo init -u https://github.com/The-Clover-Project/manifest.git -b 15-qpr2 --git-lfs
 ```
 ```bash
 repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
@@ -23,7 +23,7 @@ source build/envsetup.sh
 
 - Lunch a target
 ```bash
-lunch clover_$devicecodename-ap4a-userdebug
+lunch clover_$devicecodename-bp1a-userdebug
 ```
 
 - To start compiling

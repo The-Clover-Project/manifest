@@ -5,13 +5,13 @@
            fetch="https://github.com/The-Clover-Project"
            sync-c="true"
            sync-j="4"
-           revision="15-qpr1" />
+           revision="15-qpr2" />
 
   <remote  name="clover-gitlab"
            fetch="https://gitlab.com/thecloverproject"
            sync-c="true"
            sync-j="4"
-           revision="15-qpr1" />
+           revision="15-qpr2" />
 
   <!-- art -->
   <project path="art" name="art" groups="pdk" remote="clover" />
