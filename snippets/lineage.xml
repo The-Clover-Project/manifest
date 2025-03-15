@@ -50,9 +50,9 @@
   <!-- hardware -->
   <project path="hardware/broadcom/libbt" name="LineageOS/android_hardware_broadcom_libbt" groups="pdk" remote="LineageOS" />
   <project path="hardware/google/camera" name="LineageOS/android_hardware_google_camera" groups="pdk" remote="LineageOS" />
-  <project path="hardware/google/gchips" name="LineageOS/android_hardware_google_gchips" groups="pdk-lassen,pdk-gs-arm" remote="LineageOS" />
-  <project path="hardware/google/graphics/common" name="LineageOS/android_hardware_google_graphics_common" groups="pdk-lassen,pdk-gs-arm" remote="LineageOS" />
-  <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm" remote="LineageOS" />
+  <project path="hardware/google/gchips" name="LineageOS/android_hardware_google_gchips" groups="pdk-lassen,pdk-gs-arm,pdk-gs-imgtec" remote="LineageOS" />
+  <project path="hardware/google/graphics/common" name="LineageOS/android_hardware_google_graphics_common" groups="pdk-lassen,pdk-gs-arm,pdk-gs-imgtec" remote="LineageOS" />
+  <project path="hardware/google/pixel" name="LineageOS/android_hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="LineageOS" />
   <project path="hardware/interfaces" name="LineageOS/android_hardware_interfaces" groups="pdk,sysui-studio" remote="LineageOS" />
   <project path="hardware/libhardware" name="LineageOS/android_hardware_libhardware" groups="pdk" remote="LineageOS" />
   <project path="hardware/lineage/compat" name="LineageOS/android_hardware_lineage_compat" remote="LineageOS" />

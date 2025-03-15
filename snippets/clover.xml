@@ -32,8 +32,8 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <project path="build/release" name="build_release" groups="pdk,tradefed" remote="clover" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="clover" >
+  <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="clover" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="clover" >
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
@@ -48,7 +48,7 @@
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="clover" />
 
   <!-- hardware -->
-  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel" remote="clover" />
+  <project path="hardware/google/pixel-sepolicy" name="hardware_google_pixel-sepolicy" groups="generic_fs,pixel,pdk-desktop" remote="clover" />
 
   <!-- manifest -->
   <project path="manifest" name="manifest" remote="clover" />
