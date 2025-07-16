@@ -62,6 +62,7 @@
   <project path="packages/apps/TouchGestures" name="packages_apps_TouchGestures" remote="clover" />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clover" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="clover" />
+  <project path="packages/libraries/BlurView" name="packages_libraries_BlurView" remote="clover" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="clover" />
 
