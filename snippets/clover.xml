@@ -76,7 +76,6 @@
 
   <!-- vendor -->
   <project path="vendor/certification" name="vendor_certification" remote="clover" revision="main" />
-  <project path="vendor/custom-preference" name="vendor_custom-preference" remote="clover" />
   <project path="vendor/clover" name="vendor_clover" remote="clover" />
   <project path="vendor/gms" name="vendor_gms" remote="clover-gitlab" clone-depth="1" />
 
