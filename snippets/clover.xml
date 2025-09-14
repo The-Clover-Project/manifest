@@ -72,6 +72,7 @@
 
   <!-- system -->
   <project path="system/core" name="system_core" groups="pdk" remote="clover" />
+  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="clover" />
   <project path="system/netd" name="system_netd" groups="pdk" remote="clover" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="clover" />
   <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="clover" />
