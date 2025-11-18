@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="clover"
+           fetch="https://github.com/The-Clover-Project"
+           sync-c="true"
+           sync-j="4"
+           revision="16-qpr2" />
+
+  <remote  name="clover-gitlab"
+           fetch="https://gitlab.com/thecloverproject"
+           sync-c="true"
+           sync-j="4"
+           revision="16-qpr2" />
+
+  <!-- art -->
+  <project path="art" name="art" groups="pdk" remote="clover" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" groups="pdk" remote="clover" />
+
+  <!-- bootable -->
+  <project path="bootable/deprecated-ota" name="bootable_deprecated-ota" groups="pdk-cw" remote="clover" />
+  <project path="bootable/recovery" name="bootable_recovery" groups="pdk" remote="clover" />
+
+  <!-- build -->
+  <project path="build/make" name="build_make" groups="pdk,sysui-studio" remote="clover" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="clover" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="clover" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- external -->
+  <project path="external/bouncycastle" name="external_bouncycastle" groups="pdk" remote="clover" />
+  <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="clover" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="clover" />
+  <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover" />
+  <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="clover" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk,sysui-studio" remote="clover" />
+
+  <!-- hardware -->
+  <project path="hardware/clover/interfaces" name="hardware_clover_interfaces" remote="clover" />
+  <project path="hardware/google/pixel" name="hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="clover" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" groups="qcom" remote="clover" >
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/msm8953/Android.bp" />
+    <!--
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm660/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8450/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8550/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
+    <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8750/Android.bp" />
+  </project>
+
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="clover" />
+
+  <!-- packages -->
+  <project path="packages/apps/FaceUnlock" name="packages_apps_FaceUnlock" remote="clover-gitlab" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" groups="pdk-fs,sysui-studio,pdk-cw-tvc" remote="clover" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="clover" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="clover" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clover" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="clover" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="clover" />
+
+  <!-- sepolicy -->
+  <project path="device/clover/sepolicy" name="device_clover_sepolicy" remote="clover" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" groups="pdk" remote="clover" />
+  <project path="system/libhwbinder" name="system_libhwbinder" groups="pdk" remote="clover" />
+  <project path="system/memory/libmeminfo" name="system_memory_libmeminfo" groups="pdk" remote="clover" />
+  <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="clover" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="clover" />
+
+  <!-- vendor -->
+  <project path="vendor/certification" name="vendor_certification" remote="clover" revision="main" />
+  <project path="vendor/clover" name="vendor_clover" remote="clover" />
+  <project path="vendor/clover-preference" name="vendor_clover-preference" remote="clover" />
+  <project path="vendor/gms" name="vendor_gms_16-qpr-2" remote="clover-gitlab" clone-depth="1" />
+
+</manifest>
