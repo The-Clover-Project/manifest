@@ -56,6 +56,7 @@
   <project path="external/skia" name="external_skia" groups="pdk,qcom_msm8x26" remote="clover" />
   <project path="external/tinycompress" name="external_tinycompress" groups="pdk" remote="clover" />
   <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" groups="pdk" remote="clover" />
+  <project path="external/zstd" name="external_zstd" groups="pdk" remote="clover"/>
 
   <!-- frameworks -->
   <project path="frameworks/av" name="frameworks_av" groups="pdk" remote="clover" />
