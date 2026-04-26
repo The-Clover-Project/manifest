@@ -158,6 +158,9 @@
   <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" clone-depth="1" remote="aosp" revision="main-kernel-2025" />
   <project path="prebuilts/tools-clover" name="LineageOS/android_prebuilts_tools-lineage" clone-depth="1" remote="LineageOS" />
 
+  <!-- scripts -->
+  <project path="lineage/scripts" name="LineageOS/scripts" groups="tools" revision="main" remote="LineageOS" />
+
   <!-- sepolicy -->
   <project path="device/qcom/sepolicy" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,qssi" remote="LineageOS" />
   <project path="device/qcom/sepolicy-legacy-um" name="LineageOS/android_device_qcom_sepolicy" groups="qcom,sdm660" revision="lineage-23.2-legacy-um" remote="LineageOS" />
