@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-17.0.0_r1"
            remote="aosp"
@@ -588,7 +588,7 @@
   <project path="external/uwb" name="platform/external/uwb" groups="pdk" />
   <project path="external/v4l2_codec2" name="platform/external/v4l2_codec2" groups="pdk" />
   <project path="external/v4l-utils" name="platform/external/v4l-utils" groups="pdk" />
-  <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="pdk" />
+  <project path="external/vboot_reference" name="platform/external/vboot_reference" groups="pdk" revision="f3f0485012135cbcff3822f129f3ac5b16c345b1" />
   <project path="external/virtio-media" name="platform/external/virtio-media" groups="pdk" />
   <project path="external/vixl" name="platform/external/vixl" groups="pdk" />
   <project path="external/vkoverhead" name="platform/external/vkoverhead" groups="pdk" />
@@ -935,7 +935,7 @@
   <project path="prebuilts/runtime" name="platform/prebuilts/runtime" groups="pdk" clone-depth="1" />
   <project path="prebuilts/rust" name="platform/prebuilts/rust" groups="pdk" clone-depth="1" />
   <project path="prebuilts/rust-toolchain/darwin" name="platform/prebuilts/rust-toolchain/darwin" groups="notdefault,platform-darwin,darwin,pdk" clone-depth="1" />
-  <project path="prebuilts/rust-toolchain/linux-musl-x86" name="platform/prebuilts/rust-toolchain/linux-musl-x86" groups="pdk" clone-depth="1" />
+  <project path="prebuilts/rust-toolchain/linux-musl-x86" name="platform/prebuilts/rust-toolchain/linux-musl-x86" groups="linux-musl,pdk" clone-depth="1" />
   <project path="prebuilts/rust-toolchain/linux-x86" name="platform/prebuilts/rust-toolchain/linux-x86" groups="pdk" clone-depth="1" />
   <project path="prebuilts/r8" name="platform/prebuilts/r8" groups="pdk,sysui-studio" clone-depth="1" />
   <project path="prebuilts/sdk" name="platform/prebuilts/sdk" groups="pdk,sysui-studio" clone-depth="1" />
@@ -1114,6 +1114,11 @@
    <!-- Install lk_inc.mk into trusty root -->
     <copyfile src="lk_inc.mk" dest="lk_inc.mk" />
   </project>
+
+  <!-- The Clover Project -->
+  <include name="snippets/remove.xml"/>
+  <include name="snippets/lineage.xml"/>
+  <include name="snippets/clover.xml"/>
   <!-- END open-source projects -->
 
 </manifest>
