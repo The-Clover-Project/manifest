@@ -218,7 +218,6 @@
   <project path="system/memory/libion" name="LineageOS/android_system_memory_libion" groups="pdk" remote="LineageOS" />
   <project path="system/memory/libdmabufheap" name="LineageOS/android_system_memory_libdmabufheap" groups="pdk" remote="LineageOS" />
   <project path="system/update_engine" name="LineageOS/android_system_update_engine" groups="pdk" remote="LineageOS" />
-  <project path="system/vold" name="LineageOS/android_system_vold" groups="pdk" remote="LineageOS" />
 
   <!-- tools -->
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" remote="LineageOS" />
