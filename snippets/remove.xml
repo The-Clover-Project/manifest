@@ -34,6 +34,7 @@
   <remove-project name="platform/external/avb" />
   <remove-project name="platform/external/bouncycastle" />
   <remove-project name="platform/external/chromium-webview" />
+  <remove-project name="platform/external/conscrypt" />
   <remove-project name="platform/external/coreboot" />
   <remove-project name="platform/external/dng_sdk" />
   <remove-project name="platform/external/dtc" />
@@ -47,6 +48,7 @@
   <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/libppd" />
   <remove-project name="platform/external/mksh" />
+  <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/setupcompat" />
   <remove-project name="platform/external/tinyalsa" />
   <remove-project name="platform/external/tinycompress" />
@@ -57,6 +59,7 @@
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/hardware/interfaces" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -64,6 +67,7 @@
   <!-- hardware -->
   <remove-project name="platform/hardware/broadcom/libbt" />
   <remove-project name="platform/hardware/google/camera" />
+  <remove-project name="platform/hardware/google/interfaces" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/nxp/nfc" />
@@ -117,6 +121,7 @@
 
   <!-- system -->
   <remove-project name="platform/system/bpf" />
+  <remove-project name="platform/system/ca-certificates" />
   <remove-project name="platform/system/chre" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/extras" />
@@ -131,6 +136,7 @@
   <remove-project name="platform/system/security" />
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/update_engine" />
+  <remove-project name="platform/system/usb" />
   <remove-project name="platform/system/vold" />
 
 </manifest>
