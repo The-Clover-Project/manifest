@@ -45,7 +45,7 @@
   <project path="frameworks/base" name="frameworks_base" groups="pdk-cw-fs,pdk-fs,sysui-studio" remote="clover-private" />
   <project path="frameworks/native" name="frameworks_native" groups="pdk" remote="clover" />
   <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" groups="pdk,sysui-studio" remote="clover" />
-
+  <project path="frameworks/layoutlib" name="frameworks/layoutlib" groups="pdk-cw-fs,pdk-fs" remote="clover" />
   <!-- hardware -->
   <project path="hardware/clover/interfaces" name="hardware_clover_interfaces" remote="clover" />
   <project path="hardware/google/pixel" name="hardware_google_pixel" groups="generic_fs,pixel,pdk-gs-arm,pdk-gs-imgtec,pdk-desktop" remote="clover" />
