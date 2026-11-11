@@ -35,7 +35,7 @@
     <linkfile src="tools" dest="build/tools" />
   </project>
   <project path="build/release" name="build_release" groups="pdk,tradefed,sysui-studio" remote="clover" />
-  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="clover" />
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed,sysui-studio" remote="clover-private" />
 
   <!-- external -->
   <project path="external/aac" name="external_aac" groups="pdk" remote="clover" />
@@ -82,7 +82,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" groups="pdk-fs,pdk-cw-tvc" remote="clover-private" />
   <project path="packages/apps/SetupWizard" name="packages_apps_SetupWizard" remote="clover" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" groups="pdk-fs,sysui-studio" remote="clover" />
-  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clover" />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="clover-private" />
   <project path="packages/libs/Preference" name="packages_libs_Preference" remote="clover" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" groups="pdk-cw-fs,pdk-fs" remote="clover" />
   <project path="packages/modules/IntentResolver" name="packages_modules_IntentResolver" groups="pdk,sysui-studio" remote="clover" />
@@ -101,6 +101,7 @@
   <project path="system/gsid" name="system_gsid" groups="pdk" remote="clover" />
   <project path="system/security" name="system_security" groups="pdk" remote="clover-private" />
   <project path="system/sepolicy" name="system_sepolicy" groups="pdk" remote="clover" />
+  <project path="system/update_engine" name="system_update_engine" groups="pdk" remote="clover-private" />
   <project path="system/vold" name="system_vold" groups="pdk" remote="clover-private" />
   
   <!-- trusty -->
