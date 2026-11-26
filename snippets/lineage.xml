@@ -169,7 +169,6 @@
   <project path="packages/apps/Messaging" name="LineageOS/android_packages_apps_Messaging" groups="pdk-fs" remote="LineageOS" />
   <project path="packages/apps/Recorder" name="LineageOS/android_packages_apps_Recorder" remote="LineageOS" />
   <project path="packages/apps/SettingsIntelligence" name="LineageOS/android_packages_apps_SettingsIntelligence" groups="pdk-fs" remote="LineageOS" />
-  <project path="packages/apps/SimpleDeviceConfig" name="LineageOS/android_packages_apps_SimpleDeviceConfig" remote="LineageOS" />
   <project path="packages/apps/Twelve" name="LineageOS/android_packages_apps_Twelve" remote="LineageOS" />
   <project path="packages/apps/WallpaperPicker2" name="LineageOS/android_packages_apps_WallpaperPicker2" groups="pdk-fs,sysui-studio" remote="LineageOS" />
   <project path="packages/inputmethods/LatinIME" name="LineageOS/android_packages_inputmethods_LatinIME" groups="pdk-fs" remote="LineageOS" />
